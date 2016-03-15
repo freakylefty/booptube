@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "BoopTube",
+	"description": "As everyone knows, YouTube commenters are intelligent, articulate and engaging.  However, sometimes they get excited and type too quickly and some of their subtlety and insight is lost.  This extension helps to correct this by distilling the comments' true meaning and depth.",
+	"version": "1.0",
+	"permissions": [
+		"tabs", "http://www.youtube.com/*", "https://www.youtube.com/*"
+	],
+	"content_scripts": [
+    {
+      "matches": ["http://www.youtube.com/*", "https://www.youtube.com/*"],
+      "js": ["jquery-2.2.1.min.js", "boop.js"]
+    }
+  ]
+}
